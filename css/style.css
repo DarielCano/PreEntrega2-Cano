@@ -4,8 +4,8 @@
     --second-color: #B0E9FF;
     --active-color: #E7E307;
     --third-color: #F8E7F9;
-    --font-family-ppal: 'Fredoka One', 'cursive';
-    --font-family-sec: 'Rubik', sans-serif;
+    --font-family-ppal: 'Raleway', sans-serif;
+    --font-family-sec: 'Montserrat', sans-serif;
 
 
 
@@ -26,7 +26,8 @@ html {
 }
 
 body {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
     max-width: 140rem;
     font-size: 2rem;
@@ -36,7 +37,6 @@ body {
 }
 
 h1 {
-    margin-top: 0;
     font-size: 3.5rem;
 }
 
@@ -69,11 +69,10 @@ li {
     width: 100%;
     margin-bottom: 2rem;
     position: sticky;
-    z-index: 997;
     top: 0;
-
-
+    z-index: 997;
 }
+
 
 .iconCam {
     width: 100%;
@@ -104,11 +103,13 @@ li {
 }
 
 .nav-a {
-    padding: 1rem 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0.2rem;
     color: var(--tilte-color);
     text-transform: uppercase;
     font-weight: bold;
-    overflow: hidden;
+    transition: border 0.2s step-end;
 }
 
 .navegation {
@@ -119,24 +120,11 @@ li {
 
 
 .nav-a:hover {
-    border: 0.2rem solid var(--tilte-color);
-    animation: big 2s ease;
+    border-bottom: 0.2rem solid var(--tilte-color);
+
 
 }
 
-@keyframes big {
-    0% {
-        font-size: 2rem;
-    }
-
-    50% {
-        font-size: 2.1rem;
-    }
-
-    100% {
-        font-size: 2.2rem;
-    }
-}
 
 .hidden {
     visibility: hidden;
@@ -351,7 +339,7 @@ li {
 
 .all-content {
     background-color: rgba(0, 0, 0, .5);
-    transition-duration: 1.5s;
+    transition-duration: 1s;
     height: 100%;
     border-radius: 16px;
 }
@@ -526,8 +514,6 @@ a {
         height: 40rem;
     }
 }
-
-
 
 
 
