@@ -1,14 +1,12 @@
 :root {
     --main-color: #045AFC;
     --tilte-color: #FFFFFF;
-    --second-color: #B0E9FF;
+    --second-color: #a8d8eb;
+    --second-color-opacity: rgba(2, 4, 9, 0.2);
     --active-color: #E7E307;
     --third-color: #F8E7F9;
     --font-family-ppal: 'Raleway', sans-serif;
     --font-family-sec: 'Montserrat', sans-serif;
-
-
-
 }
 
 html {
@@ -522,26 +520,80 @@ a {
 /* Historia */
 
 .historyContent {
-    padding: 2rem 2rem;
-    border: 4px solid var(--main-color);
-    background-image: linear-gradient(to bottom, var(--third-color), #E45EEC);
-    margin-bottom: 3rem;
-    border-radius: 16px;
-}
-
-
-.historyContent__img img,
-.historyContent__img iframe {
     width: 100%;
+    /*  height: 40rem; */
+    border: 4px solid var(--main-color);
+    border-radius: 16px;
+    margin-bottom: 2rem;
+}
+
+.img1 {
+    background-image: url("../assets/img/descubrimiento-cuba.jpg");
+}
+
+.img2 {
+    background-image: url("../assets/img/ARQUITECTURA-COLONIAL-CUBANA_Joaquin-Emilio-WEISS_-Grabaado-de-la-Plaza-del-Mercado_Plaza-Vieja-de-la-Habana_Dibujo-Elias-Durnford.jpg");
+}
+
+.img3 {
+    background-image: url("../assets/img/independencia-cuba.jpg");
+}
+
+.img4 {
+    background-image: url("../assets/img/images.jfif");
+}
 
 
+.historyContent__img {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.historyContent__text {
+    height: 100%;
+    transition: all 1s ease;
 
 }
+
+.textColor-white {
+    color: var(--tilte-color);
+}
+
+.historyText__title {
+    margin-top: 0;
+    padding-top: 3rem;
+}
+
+.historyText__title {
+    visibility: hidden;
+}
+
 
 .historyContent__text p {
-    text-align: justify;
-    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1rem 1rem;
+    margin-bottom: 0;
+    height: 100%;
+    font-weight: bold;
+    visibility: hidden;
 }
+
+
+.historyContent__text:hover p,
+.historyContent__text:hover .historyText__title {
+    visibility: visible;
+}
+
+.historyContent__text:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
 
 .back {
     display: flex;
@@ -551,27 +603,17 @@ a {
 
 }
 
-
 .back__icon :hover {
     cursor: pointer;
 }
 
 /* media queries */
 @media screen and (min-width:1024px) {
-    .historyContent {
-        display: flex;
-        gap: 2rem;
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
 
-    }
-
-    .historyContent__img,
-    .historyContent__text {
-        width: 50%;
-    }
-
-    .historyContent__img img {
-        display: flex;
-        align-content: center;
     }
 
     .back {
