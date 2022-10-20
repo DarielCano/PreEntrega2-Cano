@@ -57,6 +57,10 @@ li {
     list-style-type: none;
 }
 
+p {
+    margin: 0 auto;
+}
+
 
 /* header */
 .header,
@@ -121,8 +125,6 @@ li {
 
 .nav-a:hover {
     border-bottom: 0.2rem solid var(--tilte-color);
-
-
 }
 
 
@@ -249,11 +251,12 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.5s ease;
 }
 
 .button:hover {
     cursor: pointer;
-    background-color: rgb(98, 98, 208);
+    background-color: var(--second-color);
 }
 
 .button a {
@@ -261,6 +264,11 @@ li {
     font-size: 2.5rem;
     text-align: center;
     margin: 0 1rem;
+    transition: all 0.5s ease;
+}
+
+.button:hover a {
+    color: var(--black-color);
 }
 
 
@@ -303,12 +311,10 @@ li {
 /* contenido ppal */
 .ppal-content {
     margin-top: 5rem;
-
 }
 
 .art1 {
     background-image: url(../assets/img/agramonte.jpg);
-
 }
 
 .art2 {
@@ -477,15 +483,6 @@ a {
         width: 30rem;
     }
 
-    .ppal-content {
-        display: flex;
-        gap: 1rem;
-    }
-
-    .ppal-content__text {
-        width: 40%;
-    }
-
     .navigation__footer {
         display: flex;
         justify-content: flex-end;
@@ -512,6 +509,14 @@ a {
     .slider-slides {
         height: 40rem;
     }
+}
+
+@media screen and (min-width:1024px) {
+    .ppal-content {
+        display: flex;
+        gap: 1rem;
+    }
+
 }
 
 
@@ -761,7 +766,8 @@ fieldset [type="submit"]:hover {
     height: 100%;
     border-radius: 5%;
     background-size: cover;
-    opacity: 0.5;
+    cursor: pointer;
+
 }
 
 .extra-image {
@@ -773,7 +779,7 @@ fieldset [type="submit"]:hover {
     background-size: cover;
     background-position: center;
     border-radius: 16px;
-
+    cursor: pointer;
 }
 
 
