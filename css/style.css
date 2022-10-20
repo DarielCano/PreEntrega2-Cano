@@ -764,10 +764,6 @@ fieldset [type="submit"]:hover {
     opacity: 0.5;
 }
 
-.galery__img img:hover {
-    opacity: 1;
-}
-
 .extra-image {
     width: 90%;
     max-width: 50rem;
@@ -777,12 +773,9 @@ fieldset [type="submit"]:hover {
     background-size: cover;
     background-position: center;
     border-radius: 16px;
-    opacity: 0.5;
+
 }
 
-.extra-image:hover {
-    opacity: 1;
-}
 
 .bI-one,
 .bI-two {
