@@ -519,7 +519,7 @@ a {
 /* /////////////////////////////////////////////////////////////// */
 
 /* Historia */
-.historyText-title {
+.content-title {
     border-top: 5px solid var(--main-color);
     border-bottom: 5px solid var(--main-color);
     width: 70%;
@@ -751,37 +751,44 @@ fieldset [type="submit"]:hover {
     width: 90%;
     max-width: 50rem;
     height: 30rem;
-    background-color: var(--third-color);
-    margin: 0 auto;
-    margin-bottom: 1rem;
     border-radius: 5%;
+    margin: 0 auto;
+
 }
 
 .galery__img img {
     width: 100%;
     height: 100%;
     border-radius: 5%;
-    padding: 1rem 1rem;
     background-size: cover;
     opacity: 0.5;
 }
 
+.galery__img img:hover {
+    opacity: 1;
+}
+
 .extra-image {
-    width: 100%;
+    width: 90%;
     max-width: 50rem;
-    min-height: 30rem;
+    height: 30rem;
+    margin-left: auto;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     border-radius: 16px;
-    opacity: 0.2;
+    opacity: 0.5;
+}
+
+.extra-image:hover {
+    opacity: 1;
 }
 
 .bI-one,
 .bI-two {
     background-image: url(../assets/img/hoteles/CCC-Valentin-Cayo-Cruz-Pool-001.jpg);
     width: 90%;
-    margin: 1rem auto;
+    margin: 0 auto;
 }
 
 .bI-one {
@@ -792,22 +799,17 @@ fieldset [type="submit"]:hover {
     grid-row: 15;
 }
 
-.galery__img img:hover {
-    opacity: 1;
-}
+
 
 @media screen and (min-width:768px) {
     .galery {
         grid-template-columns: repeat(2, 1fr);
+        row-gap: 3rem;
     }
 
     .extra-image {
-        max-width: 100rem;
-    }
-
-    .bI-one,
-    .bI-two {
         width: 95%;
+        max-width: 110rem;
     }
 
     .bI-one {
