@@ -122,11 +122,10 @@ p {
     align-items: flex-end;
 }
 
-
 .nav-a:hover {
     border-bottom: 0.2rem solid var(--tilte-color);
+    color: var(--tilte-color);
 }
-
 
 .hidden {
     visibility: hidden;
@@ -193,14 +192,12 @@ p {
     cursor: pointer;
 }
 
-
 /* main */
 
 .container {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-
 }
 
 .big-image__location {
@@ -217,7 +214,6 @@ p {
     color: var(--main-color);
     font-size: 3rem;
     cursor: pointer;
-
 }
 
 .block {
@@ -344,7 +340,7 @@ p {
 }
 
 .all-content {
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, 0.5);
     transition-duration: 1s;
     height: 100%;
     border-radius: 16px;
@@ -903,7 +899,7 @@ fieldset [type="submit"]:hover {
     margin: 2rem 1rem;
 }
 
-.btn {
+.btn-card {
     background-color: var(--main-color);
     width: 60%;
     height: auto;
@@ -912,7 +908,7 @@ fieldset [type="submit"]:hover {
     border-radius: 16px;
 }
 
-.btn:hover {
+.btn-card:hover {
     cursor: pointer;
     background-color: rgb(98, 98, 208);
 }
