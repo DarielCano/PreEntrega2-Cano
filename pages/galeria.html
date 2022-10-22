@@ -61,61 +61,59 @@
 
   <body>
     <header data-dark class="header">
-      <div class="title">
-        <div class="icon">
-          <img
-            class="iconCam"
-            src="../assets/img/tinCam.jfif"
-            alt="imagen Tinajon"
-          />
-        </div>
-
-        <h1><a class="title-text" href="../index.html">MiCamagüey</a></h1>
-        <div class="nav-menu hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-menu-2"
-            width="44"
-            height="44"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="#ffffff"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+      <nav class="navbar navbar-expand-lg bg-light nav-size">
+        <div class="container-fluid nav-background">
+          <a class="navbar-brand" href="#">
+            <div class="title">
+              <div class="icon">
+                <img
+                  class="iconCam"
+                  src="../assets/img/tinCam.jfif"
+                  alt="imagen Tinajon"
+                />
+              </div>
+              <h1>
+                <a class="title-text" href="../index.html">MiCamagüey</a>
+              </h1>
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <line x1="4" y1="6" x2="20" y2="6" />
-            <line x1="4" y1="12" x2="20" y2="12" />
-            <line x1="4" y1="18" x2="20" y2="18" />
-          </svg>
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse nav-menu" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link nav-a" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-a" href="./historia.html">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-a" href="./destinos.html">Destinos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-a" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-a isactive" href="./galeria.html"
+                  >Galeria</a
+                >
+              </li>
+            </ul>
+            <div class="theme">
+              <p class="btn-theme">​🌙​</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="navegation">
-        <nav>
-          <ul class="navigation__list">
-            <li class="navigation__list-item">
-              <a class="nav-a" href="../index.html">Inicio</a>
-            </li>
-            <li class="navigation__list-item">
-              <a class="nav-a" href="./historia.html">Historia</a>
-            </li>
-            <li class="navigation__list-item">
-              <a class="nav-a" href="./destinos.html">Destinos</a>
-            </li>
-            <li class="navigation__list-item">
-              <a class="nav-a" href="./contacto.html">Contacto</a>
-            </li>
-            <li class="navigation__list-item">
-              <a class="nav-a isactive" href="./galeria.html">Galería</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="theme">
-          <p class="btn-theme">​🌙​</p>
-          <!--  <button class=" btn-tema-dark ">🌞​​</button> -->
-        </div>
-      </div>
+      </nav>
     </header>
     <main data-dark class="container">
       <div class="slider">
@@ -247,10 +245,10 @@
         </li>
       </ul>
 
-      <div class="red">
-        <div class="red__icon">
+      <div class="red-footer">
+        <div class="red__icon-footer">
           <a
-            class="facebook"
+            class="facebook-footer"
             href="http://facebook.com"
             target="_blank"
             rel="noopener"
@@ -275,7 +273,7 @@
           </a>
 
           <a
-            class="twitter"
+            class="twitter-footer"
             href="http://twitter.com"
             target="_blank"
             rel="noopener"
