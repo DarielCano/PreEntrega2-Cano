@@ -395,6 +395,8 @@ li {
 .question {
     margin-top: 3rem;
     padding-bottom: 2rem;
+    margin-left: auto;
+    margin-right: center;
 
 }
 
