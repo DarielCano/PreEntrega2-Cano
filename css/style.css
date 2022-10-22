@@ -127,11 +127,6 @@ li {
 
 /* btn theme y animation */
 
-.btn-theme:hover {
-    animation: shake 2s forwards;
-}
-
-
 @keyframes shake {
     10% {
         transform: rotate(15deg);
@@ -166,7 +161,7 @@ li {
 
 /* main */
 
-.container {
+.main-container {
     width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -351,7 +346,6 @@ li {
 
 /* footer */
 .footer {
-    margin: 0 auto;
     width: 100%;
     height: auto;
     display: flex;
@@ -400,7 +394,8 @@ li {
 
 .question {
     margin-top: 3rem;
-    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+
 }
 
 .question p,
@@ -469,6 +464,10 @@ li {
         justify-content: flex-start;
         align-items: center;
 
+    }
+
+    .btn-theme:hover {
+        animation: shake 2s forwards;
     }
 
 }
@@ -703,6 +702,7 @@ fieldset [type="submit"]:hover {
 
 /* galeria */
 .galery {
+    margin-top: 3rem;
     display: grid;
     row-gap: 2rem;
 }
