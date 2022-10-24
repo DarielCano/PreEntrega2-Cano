@@ -16,6 +16,7 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
     scroll-behavior: smooth;
+
 }
 
 *,
@@ -161,6 +162,13 @@ li {
 
 /* main */
 
+.img-size {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 .main-container {
     width: 100%;
     margin: 0 auto;
@@ -184,6 +192,7 @@ li {
 }
 
 .block {
+    margin-top: 2rem;
     padding-top: 2rem;
     margin-bottom: 2rem;
     border-top: 1rem solid var(--main-color);
@@ -234,39 +243,6 @@ li {
     color: var(--black-color);
 }
 
-
-/* slides de imagenes */
-
-.slider-slides {
-    position: relative;
-    height: 20rem;
-    margin-bottom: 2rem;
-}
-
-.slider-slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 2s ease;
-}
-
-.slider-slide img {
-
-    height: inherit;
-    width: 90%;
-    object-fit: cover;
-    object-position: 70% 30%;
-
-}
-
-.slider-slide.active {
-    opacity: 1;
-    visibility: visible;
-}
 
 /* //////////////////////////////////////////////////////// */
 
@@ -415,13 +391,6 @@ li {
 
 /* media-queries */
 
-
-@media screen and (min-width:600px) {
-    .slider-slides {
-        height: 35rem;
-    }
-}
-
 @media screen and (min-width:768px) {
 
     .block {
@@ -449,10 +418,15 @@ li {
         margin-right: -5rem;
     }
 
+}
 
-    .slider-slides {
-        height: 40rem;
+
+
+@media screen and (min-width:900px) {
+    .img-size {
+        height: 60rem;
     }
+
 }
 
 @media screen and (min-width:1024px) {
@@ -483,17 +457,21 @@ li {
     border-top: 5px solid var(--main-color);
     border-bottom: 5px solid var(--main-color);
     width: 70%;
+    margin-top: 2rem;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
 
 .historyContent {
-    width: 100%;
+    width: 90%;
     border: 4px solid var(--main-color);
     border-radius: 16px;
     margin-bottom: 1rem;
     margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .img1 {
@@ -522,7 +500,6 @@ li {
     border-radius: 16px;
 }
 
-
 .historyContent__text {
     transition: all 1s ease;
     height: 100%;
@@ -536,12 +513,13 @@ li {
 .historyText__title {
     margin-top: 0;
     padding-top: 3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .historyText__title {
     visibility: hidden;
 }
-
 
 .historyContent__text p {
     display: flex;
@@ -569,12 +547,8 @@ li {
     justify-content: space-around;
     align-items: center;
     height: 5rem;
-    transition: background-color 1s ease;
+    transition: all 1s ease;
 
-}
-
-.youtube-svg {
-    margin-top: 1rem;
 }
 
 .btn-youtube:hover {
@@ -607,32 +581,58 @@ li {
 
 }
 
+/* .back-question {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+.back-question {
+    margin: 2rem auto;
+}
+
+.back-question a,
+.back-question p {
+    display: inline;
+}
+
+.back-question a {
+    margin-bottom: 1rem;
+    margin-left: 0.2rem;
+    color: var(--main-color)
+}
+
+.back-question a:hover {
+    text-decoration: underline;
+}
+
 .back__icon :hover {
     cursor: pointer;
 }
 
 /* media queries */
 @media screen and (min-width:1024px) {
+    .historyContent {
+        width: 100%;
+    }
+
     .grid-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        column-gap: 1rem;
+        column-gap: 3rem;
     }
 
-    /*  .historyText-title {
-        width: 50%;
-    } */
-
     .back {
-        padding-left: 2rem;
+        /*   padding-left: 2rem; */
         flex-direction: row;
         justify-content: flex-start;
     }
 
-    .back .question {
+    /* .back .question {
         padding-left: 40rem;
     }
-
+ */
 }
 
 
@@ -640,20 +640,18 @@ li {
 /* /////////////////////////////////////////////////////////////// */
 
 /* Contacto */
+.form {
+    margin-top: 3rem;
+}
 
 fieldset {
-
     height: auto;
     margin: 1rem auto;
-    width: 70%;
+    width: 95%;
     border: 2px solid var(--main-color);
     border-radius: 16px;
 }
 
-legend {
-    font-size: 3rem;
-    font-weight: bold;
-}
 
 .form textarea {
     resize: none;
@@ -665,18 +663,26 @@ fieldset>* {
     margin-top: 2rem;
     padding: 1rem;
     border-radius: 16px;
+    font-size: 1.8rem;
+}
+
+legend {
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 fieldset [type="submit"] {
     background-color: var(--main-color);
     color: var(--tilte-color);
-    border-radius: 16px;
+    font-weight: bold;
+    border-radius: 24px;
+    transition: all 0.5s ease;
 }
 
 fieldset [type="submit"]:hover {
     cursor: pointer;
-    background-color: rgb(123, 165, 209);
-
+    background-color: var(--second-color);
+    color: var(--black-color);
 }
 
 .contact *::placeholder {
@@ -694,7 +700,7 @@ fieldset [type="submit"]:hover {
 /* media queries */
 @media screen and (min-width:768px) {
     fieldset [type="submit"] {
-        width: 50%;
+        width: 40rem;
         margin-left: auto;
         margin-right: auto;
     }

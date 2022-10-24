@@ -60,7 +60,7 @@
   </head>
   <body>
     <header data-dark class="header">
-      <nav class="navbar navbar-expand-lg bg-light nav-size">
+      <nav class="navbar navbar-expand-lg nav-size">
         <div class="container-fluid nav-background">
           <a class="navbar-brand" href="#">
             <div class="title">
@@ -123,56 +123,76 @@
       </nav>
     </header>
     <main data-dark class="main-container">
-      <div class="slider">
-        <div class="slider-slides">
-          <div class="slider-slide active">
-            <img src="./assets/img/camaguey.jpg" alt="plaza de camaguey" />
-          </div>
+      <section class="slides-container">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide section"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner section">
+            <div class="carousel-item active">
+              <img
+                src="./assets/slides/depositphotos_88326264-stock-photo-camaguey-cuba-september-4-2015.jpg"
+                alt="plaza de camaguey"
+                class="d-block img-size"
+                alt="plaza de camaguey"
+              />
+            </div>
 
-          <div class="slider-slide">
-            <img
-              src="./assets/img/Calle-de-los-cines.jpg"
-              alt="plaza de camaguey"
-            />
+            <div class="carousel-item">
+              <img
+                src="./assets/slides/Camaguey-Cuba.jpg"
+                alt="plaza de camaguey"
+                class="d-block img-size"
+                alt="plaza de camaguey"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/slides/depositphotos_29948431-stock-photo-camaguey.jpg"
+                alt="plaza de camaguey"
+                class="d-block img-size"
+                alt="plaza de camaguey"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/slides/istockphoto-535403396-612x612.jpg"
+                alt="plaza de camaguey"
+                class="d-block img-size"
+                alt="plaza de camaguey"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/slides/vistas-panorámicas-de-camaguey-cuba-las-los-destinos-turísticos-182667209.jpg"
+                alt="plaza de camaguey"
+                class="d-block img-size"
+                alt="plaza de camaguey"
+              />
+            </div>
           </div>
-
-          <div class="slider-slide">
-            <img src="./assets/img/Camaguey (1).jpg" alt="plaza de camaguey" />
-          </div>
-
-          <div class="slider-slide">
-            <img
-              src="./assets/img/Ciudad de Camagüey (2)(1).jpg"
-              alt="plaza de camaguey"
-            />
-          </div>
-
-          <div class="slider-slide">
-            <img
-              src="./assets/img/brisas-santa-lucia.jpg"
-              alt="plaza de camaguey"
-            />
-          </div>
-
-          <div class="slider-slide">
-            <img src="./assets/img/camaguey1.jpg" alt="plaza de camaguey" />
-          </div>
-
-          <div class="slider-slide">
-            <img
-              src="./assets/img/playa-de-santa-lucia-provincia-de-camagüey-cuba-59797340.jpg"
-              alt="plaza de camaguey"
-            />
-          </div>
-
-          <div class="slider-slide">
-            <img
-              src="./assets/img/GettyImages-498400866.webp"
-              alt="plaza de camaguey"
-            />
-          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-      </div>
+      </section>
+
       <div class="block">
         <div class="map">
           <iframe
@@ -205,8 +225,8 @@
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-brand-whatsapp"
-              width="60"
-              height="60"
+              width="35"
+              height="35"
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="#0FB633"
