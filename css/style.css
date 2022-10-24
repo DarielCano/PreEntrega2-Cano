@@ -325,7 +325,7 @@ li {
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
 }
@@ -344,6 +344,9 @@ li {
     justify-content: center;
 }
 
+.footer svg {
+    margin: 1rem auto;
+}
 
 
 .red__derechos p {
