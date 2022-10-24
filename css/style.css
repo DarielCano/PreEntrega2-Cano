@@ -420,14 +420,11 @@ li {
     .facebook {
         margin-right: -5rem;
     }
-
 }
-
-
 
 @media screen and (min-width:900px) {
     .img-size {
-        height: 60rem;
+        height: 63rem;
     }
 
 }
