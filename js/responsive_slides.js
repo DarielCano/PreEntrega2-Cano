@@ -1,4 +1,4 @@
-const d = document;
+/* const d = document;
 
 export default function slider() {
   const $slides = d.querySelectorAll(".slider-slide");
@@ -17,3 +17,4 @@ export default function slider() {
     setInterval(tiempoSlide, 5000);
   });
 }
+ */
