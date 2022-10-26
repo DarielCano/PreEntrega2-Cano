@@ -1,6 +1,6 @@
 const d = document;
 import { themePpal } from "./change_theme.js";
-import slider from "./responsive_slides.js";
+/* import slider from "./responsive_slides.js"; */
 
 d.addEventListener("DOMContentLoaded", (e) => {});
 

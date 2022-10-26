@@ -549,6 +549,7 @@ li {
     height: 5rem;
     transition: all 1s ease;
 
+
 }
 
 .btn-youtube:hover {
@@ -580,13 +581,6 @@ li {
     justify-content: center;
 
 }
-
-/* .back-question {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 
 .back-question {
     margin: 2rem auto;
@@ -624,15 +618,9 @@ li {
     }
 
     .back {
-        /*   padding-left: 2rem; */
         flex-direction: row;
         justify-content: flex-start;
     }
-
-    /* .back .question {
-        padding-left: 40rem;
-    }
- */
 }
 
 
@@ -650,6 +638,7 @@ fieldset {
     width: 95%;
     border: 2px solid var(--main-color);
     border-radius: 16px;
+    box-shadow: 10px 5px 5px var(--main-color);
 }
 
 
