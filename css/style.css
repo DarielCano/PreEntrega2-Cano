@@ -644,6 +644,7 @@ fieldset {
 
 .form textarea {
     resize: none;
+    border: 0;
 }
 
 fieldset>* {
@@ -653,6 +654,7 @@ fieldset>* {
     padding: 1rem;
     border-radius: 16px;
     font-size: 1.8rem;
+    border: 0;
 }
 
 legend {
@@ -679,11 +681,11 @@ fieldset [type="submit"]:hover {
 }
 
 [required]:valid {
-    border: 3px solid green;
+    border: 5px solid green;
 }
 
 [required]:invalid {
-    border: 3px solid red;
+    border: 5px solid red;
 }
 
 /* media queries */
@@ -710,7 +712,11 @@ fieldset [type="submit"]:hover {
     height: 30rem;
     border-radius: 5%;
     margin: 0 auto;
+    pointer-events: auto;
+}
 
+.border_img {
+    box-shadow: 10px 5px 5px var(--black-color);
 }
 
 .galery__img img {
@@ -750,6 +756,38 @@ fieldset [type="submit"]:hover {
     grid-row: 15;
 }
 
+.modal-section__header__img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.modal-section__content__img {
+    width: 95%;
+    height: auto;
+
+}
+
+.modal-section__img {
+    width: 90%;
+    max-width: 90rem;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-section__img img {
+    width: 100%;
+    height: 100%;
+
+
+}
+
+
+
+.modal-section[id|="img"]:target {
+    opacity: 1;
+}
 
 
 @media screen and (min-width:768px) {
@@ -795,8 +833,6 @@ fieldset [type="submit"]:hover {
     margin-top: 2rem;
 }
 
-
-
 .ppal-section__search {
     display: flex;
     align-items: center;
@@ -837,6 +873,10 @@ fieldset [type="submit"]:hover {
     border-radius: 5%;
     margin: 0 auto;
     margin-bottom: 3rem;
+}
+
+.border_blue {
+    box-shadow: 10px 5px 5px var(--main-color);
 }
 
 .card__img {
@@ -942,6 +982,10 @@ fieldset [type="submit"]:hover {
     justify-content: center;
     align-items: center;
     height: 30%;
+}
+
+.modal-section .btn-card {
+    pointer-events: auto;
 }
 
 .modal-section[id|="hotel"]:target {
